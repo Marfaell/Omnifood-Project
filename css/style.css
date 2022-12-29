@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -38,6 +38,10 @@ body {
   gap: 9.6rem;
   max-width: 130rem;
   align-items: center;
+}
+
+.hero-text-box {
+  grid-row: 1 / 2;
 }
 
 .heading-primary {
@@ -63,6 +67,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
+  font-weight: 600;
 
   /* we are going to make animation using CSS to make color switch smoother */
   transition: background-color 0.3s;
@@ -98,4 +103,42 @@ body {
 
 .hero-img {
   width: 100%;
+}
+
+.hero-img-box {
+  grid-column: 2 / -1;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivery-img {
+  display: flex;
+}
+
+.delivery-img img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+
+  border: 3px solid #fdf2e9;
+}
+
+.delivery-img img:last-child {
+  margin: 0;
+}
+
+.customer-text-hero {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.customer-text-hero span {
+  color: #cf711f;
+  font-weight: 700;
 }
