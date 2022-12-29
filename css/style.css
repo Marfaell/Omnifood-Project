@@ -1,0 +1,101 @@
+/* COLOR 
+Primary #e67e22
+Tints
+Shades
+Accents
+Greys #555 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px;  - due to using a fixed value user won't be able to adjust font for their needs*/
+  font-size: 62.5%;
+  /* how we calculate font size in pixels? 
+  we want 10px
+  10x / 16px = 0.0625 = 62.5% */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  max-width: 130rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+
+  /* we are going to make animation using CSS to make color switch smoother */
+  transition: background-color 0.3s;
+}
+
+.btn--1:link,
+.btn--1:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--2:link,
+.btn--2:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--1:hover,
+.btn--1:active {
+  background-color: #cf711f;
+}
+
+.btn--2:hover,
+.btn--2:active {
+  background-color: #fdf2e9;
+  /* trick to have border on the inside of elemant - to not make whole set up jump  */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+/* this is a helper class */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.hero-img {
+  width: 100%;
+}
