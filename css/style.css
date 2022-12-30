@@ -26,9 +26,11 @@ body {
   color: #555;
 }
 
+/* HERO */
+
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
@@ -38,6 +40,8 @@ body {
   gap: 9.6rem;
   max-width: 130rem;
   align-items: center;
+
+  padding: 0 3.2rem;
 }
 
 .hero-text-box {
@@ -141,4 +145,24 @@ body {
 .customer-text-hero span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  /* we use fixed hight bc we wish for it to follow page and stay the page at all the times */
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.main-nav {
 }
