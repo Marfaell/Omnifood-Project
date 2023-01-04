@@ -277,6 +277,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* .section-how div:nth-child(1) {
   background-color: aqua;
 }
@@ -374,4 +378,33 @@ body {
 .step-description {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+/* MEALS SECTION */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
 }
