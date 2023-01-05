@@ -79,7 +79,8 @@ body {
   font-weight: 600;
 
   /* we are going to make animation using CSS to make color switch smoother */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  /* transition: background-color 0.3s; */
 }
 
 .btn--1:link,
@@ -386,6 +387,47 @@ body {
   padding: 9.6rem 0;
 }
 
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: #333;
+
+  border-radius: 100px;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #fcc419;
+}
+
 .meal-title {
   font-size: 2.4rem;
   color: #333;
@@ -407,4 +449,75 @@ body {
 
 .meal-attribute {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+
+  display: flex;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.card {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+/* diet list */
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-diet-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4px;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recepies {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.center-text {
+  text-align: center;
 }
