@@ -521,3 +521,31 @@ strong {
 .center-text {
   text-align: center;
 }
+
+/* TESTIMONIALS SECTION */
+
+.testimonial-section {
+  padding: 9.6rem 0;
+}
+
+.testimonial-box {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  gap: 1.4rem;
+}
+
+.testimonials-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
+}
