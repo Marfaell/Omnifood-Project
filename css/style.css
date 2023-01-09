@@ -305,6 +305,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* .section-how div:nth-child(1) {
   background-color: aqua;
 }
@@ -753,8 +757,8 @@ strong {
 .cta-img {
   background-image: linear-gradient(
       to right bottom,
-      rgba(250, 228, 209, 0.208),
-      rgba(230, 125, 34, 0.221)
+      rgba(235, 151, 78, 0.553),
+      rgba(230, 125, 34, 0.507)
     ),
     url(../img/eating.jpg);
   background-size: cover;
@@ -818,3 +822,5 @@ strong {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.509);
 }
+
+/* FOOTER */
