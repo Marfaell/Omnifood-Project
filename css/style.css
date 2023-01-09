@@ -712,3 +712,35 @@ strong {
 }
 
 /* CALL TO ACTION */
+
+.call-to-action {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  overflow: hidden;
+
+  height: 50rem;
+
+  background-image: linear-gradient(to right bottom, #fae5d3, #e67e22);
+}
+
+.cta-text {
+}
+
+.cta-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(250, 228, 209, 0.208),
+      rgba(230, 125, 34, 0.221)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
