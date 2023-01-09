@@ -68,6 +68,7 @@ body {
   margin-bottom: 4.8rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -77,6 +78,10 @@ body {
   border-radius: 9px;
   text-decoration: none;
   font-weight: 600;
+
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 
   /* we are going to make animation using CSS to make color switch smoother */
   transition: all 0.3s;
@@ -726,8 +731,6 @@ strong {
 
   overflow: hidden;
 
-  height: 50rem;
-
   background-image: linear-gradient(to right bottom, #fae5d3, #e67e22);
 }
 
@@ -765,4 +768,53 @@ strong {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+/* fixing outline */
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.599);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.509);
 }
