@@ -510,7 +510,8 @@ strong {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 2.4px;
+  gap: 1.6px;
+  line-height: 1.2;
 }
 
 .list-icon {
