@@ -188,7 +188,7 @@ body {
 
 /* NAVIGATION */
 
-.main-nav-list {
+.main-nav {
   list-style: none;
   display: flex;
   gap: 4.8rem;
@@ -925,7 +925,4 @@ strong {
   color: #333;
 }
 
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
-}
 /*  */

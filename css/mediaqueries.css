@@ -130,7 +130,7 @@ instead 1 = rem = 1em = 16px */
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     transition: all 0.5s ease-in;
     /* Hide navigation */
@@ -162,6 +162,10 @@ instead 1 = rem = 1em = 16px */
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
