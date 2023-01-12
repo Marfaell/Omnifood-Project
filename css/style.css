@@ -188,7 +188,7 @@ body {
 
 /* NAVIGATION */
 
-.main-nav {
+.main-nav-list {
   list-style: none;
   display: flex;
   gap: 4.8rem;
